@@ -269,12 +269,12 @@
             $("#match-name").text(data.name);
             $("#match-img").attr("src", data.photo);
             // for (var i = 0; i < data.scores.length; i++) {}
-            $.get("/api/friends", function(friendsList) {
-              for (var i = 0; i < friendsList.length; i++) {
-                for (var j = 0; j < friendsList[i].scores.length; j++){
+            // $.get("/api/friends", function(friendsList) {
+            //   for (var i = 0; i < friendsList.length; i++) {
+            //     for (var j = 0; j < friendsList[i].scores.length; j++){
 
-              }
-            });
+            //   }
+            // });
 
             // Show the modal with the best match
             $("#results-modal").modal("toggle");
